@@ -14,5 +14,9 @@ attr_reader :word
     anagrams_array
   end
 
+  def match(array)
+    array.collect {|m| m.split("").sort == @word.split("").sort}
+  end
+
 
 end
